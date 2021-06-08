@@ -12,10 +12,8 @@ NFT marketplace has to:
 - 2.4. All purchases  (in Auction and Fix Price sale) should be with downside protection. 
 
 3. When a user buys NFT.
-
-3.1. Part from paid amount transfers to our company (CompanyFee). So `amount = amount - CompanyFee;`
-
-3.2. The rest splits between downside protection and seller: 
+  - 3.1. Part from paid amount transfers to our company (CompanyFee). So `amount = amount - CompanyFee;`
+  - 3.2. The rest splits between downside protection and seller: 
 
 `downside amount = amount * downside protection rate;` (the rate is taken from seller order)
 
