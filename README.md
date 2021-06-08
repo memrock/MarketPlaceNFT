@@ -6,10 +6,10 @@ NFT marketplace has to:
 
 
 2. Seller should be able to create Auction or Fix price sale order, transfer NFT to the Market Place contract, and provide parameters: token price, auction duration (in Auction mode), terms of downside protection (time of protection and rate).
-:  2.1. Seller should be able to cancel his order if it was not bought or there were no bids on Auction.
-:  2.2. In the Auction mode, when the user makes a bid he can't cancel it. The smart contract should hold info only about the highest bidder, if another user makes a higher bid, the previous higher bidder gets refunds. 
-:  2.3. In the Fix Price Sale mode, the user may send an off-chain offer with a new price and downside protection terms to the seller. If the seller accepts this offer he creates a sub-order in the smart contract and sends the link to it to the buyer. The sub-order may be limited in time. The buyer can pay it and buy NFT. In case if the seller does not accept the offer - no need to refund money (the buyer did not pay upfront).
-:  2.4. All purchases  (in Auction and Fix Price sale) should be with downside protection. 
+- 2.1. Seller should be able to cancel his order if it was not bought or there were no bids on Auction.
+- 2.2. In the Auction mode, when the user makes a bid he can't cancel it. The smart contract should hold info only about the highest bidder, if another user makes a higher bid, the previous higher bidder gets refunds. 
+- 2.3. In the Fix Price Sale mode, the user may send an off-chain offer with a new price and downside protection terms to the seller. If the seller accepts this offer he creates a sub-order in the smart contract and sends the link to it to the buyer. The sub-order may be limited in time. The buyer can pay it and buy NFT. In case if the seller does not accept the offer - no need to refund money (the buyer did not pay upfront).
+- 2.4. All purchases  (in Auction and Fix Price sale) should be with downside protection. 
 
 3. When a user buys NFT.
 
