@@ -12,21 +12,19 @@ NFT marketplace has to:
 - 2.4. All purchases  (in Auction and Fix Price sale) should be with downside protection. 
 
 3. When a user buys NFT.
-  - 3.1. Part from paid amount transfers to our company (CompanyFee). So `amount = amount - CompanyFee;`
-  - 3.2. The rest splits between downside protection and seller: 
+- 3.1. Part from paid amount transfers to our company (CompanyFee). So `amount = amount - CompanyFee;`
+- 3.2. The rest splits between downside protection and seller: 
 
 `downside amount = amount * downside protection rate;` (the rate is taken from seller order)
 
 `seller's part = amount - downside amount;`
 
-3.3. Seller's part transfers to the seller, downside part transfers to the yield-farming contract (if available).
+- 3.3. Seller's part transfers to the seller, downside part transfers to the yield-farming contract (if available).
 
 
 4. Sellers's may claim the rest money from downside protection in one of two cases:
-
-4.1. Time of protection expired
-
-4.2. Current owner of NFT is not a buyer and not a SmartContract (use function isContract() to check it).
+- 4.1. Time of protection expired
+- 4.2. Current owner of NFT is not a buyer and not a SmartContract (use function isContract() to check it).
 
 
 5. Buyer may return NFT and get back his downside protection part of money if protection time is not expired. The NFT thransfers to seller.
